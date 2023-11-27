@@ -1,7 +1,7 @@
 body {
     display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
+    height: 100px;
+    width: 100%; 
     background-color: #ffffff;
     margin: 0;
 }
@@ -10,7 +10,7 @@ main {
     margin-bottom: 70px;
 }
 
-.textoInicio {
+.textoInicio{
     margin: 45px;
     background-position: center;
     list-style: none;
@@ -19,46 +19,51 @@ main {
     font-size: 18px;
 }
 
-h1, h4 {
-    color: #0F3D19;
+h1, h4{
+    color: #0F3D19 ;
 }
 
-h2, h5 {
-    color: #64946D;
-}
+h2, h5{
+    color:#64946D;
+   
+   }
 
-.menu {
+.menu{    
     display: flex;
-    height: 80px; 
+    height:100px;
     width: 100%;
     bottom: 0;
-    background-color: #64946d14;
+    background-color:#64946d14;;
     color: rgb(255, 255, 255);
-    justify-content: space-between; 
-    align-items: center;
-    padding: 0 20px; 
+    justify-content:first baseline;
+    align-items:center;
+    margin: 0;
 }
 
-.barraMenu {
+.barraMenu{
     display: flex;
-    height: 100px;
+    height:100px;
     width: 100%;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     padding: 0px;
+    
 }
-
-li {
-    margin: 20px;
+li{
+    margin: 40px;
+    background-position: center;
+    list-style: none;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-
+   
     a {
-        color: #64946D;
+        color:#64946D;
+        
     }
 }
-
-ul {
+ul{
     background-position: center;
     list-style: none;
     padding: 0px;
@@ -66,41 +71,52 @@ ul {
     font-size: 18px;  
 }
 
-.imagem {
-    height: auto; 
-    max-width: 100%; 
-}
+.imagem{
 
+    height: 500px;
+    width: 100%;
+    object-fit:contain;
+    margin: 0px;
+
+}
 img:hover {
     transition: transform .3s;
 }
 
-.subtitulo {
+.subtitulo{
     height: 100px;
     width: 100%;
 }
 
-.conteudo {
-    margin: 15px;
+.conteudo{
+    margin: 45px;
+    background-position: center;
+    list-style: none;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-  
+    text-align: justify;
 }
 
-.cardapio {
+
+.cardapio{
     width: 100%;
-    text-align: center;
+    text-align:center;
 }
 
-/* modal */
+
+ /* modal */
 
 .modalBtn {
     height: 5vh;
     min-height: 30px;
     width: 15vh;
     min-width: 130px;
+
     border-radius: 5px;
     border: 0;
     outline: 0;
+
     background-color: #007119;
     font-size: 20px;
 }
@@ -108,6 +124,7 @@ img:hover {
 .text {
     margin-top: 0;
     font-size: 40px;
+   
 }
 
 .modal {
@@ -120,6 +137,7 @@ img:hover {
     height: 100%;
     overflow: auto;
     background-color: #64946dee;
+ 
 }
 
 .modal .content {
@@ -129,11 +147,14 @@ img:hover {
     border-radius: 30px;
     width: 50%; 
     font-size: 22px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     font-family: 'LexendDeca-Regular';
     color: var(--title);
+    
 }
 
 .title {
@@ -148,9 +169,10 @@ img:hover {
     align-items: center;
 }
 
-.tiluloPedido {
+
+.tiluloPedido{
     width: 100%;
-    text-align: center;
+    text-align:center;
     font-size: 30px;
     color: #64946dee; 
 }
@@ -191,6 +213,7 @@ img:hover {
     border: none;
     border-radius: 5px;
     color: #64946dee;
+
 }
 
 button#confirmar-pedido {
@@ -202,14 +225,16 @@ button#confirmar-pedido {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+  
 }
 
 button#confirmar-pedido:hover {
     background-color: #27ae60;
+ 
 }
 
-footer {
-    height: 50px;
+footer{
+    height:50px;
     width: 100%;
     text-align: center;
     background-color: #0F3D19 ;
@@ -218,24 +243,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    margin-top: 50px;
+	color: #fff;
+	margin-top: 50px;
 }
+
+
+/* Adicionando regras de mídia para telas menores */
 @media screen and (max-width: 768px) {
     .menu {
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px; /* Adicionei mais espaço interno para melhorar a aparência */
+        padding: 20px;
     }
 
     li {
         margin: 10px 0;
-    }
-
-    .imagem {
-        width: 100%;
-        height: auto;
     }
 
     .conteudo {
