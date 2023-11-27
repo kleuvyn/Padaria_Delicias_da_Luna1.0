@@ -221,12 +221,12 @@ footer {
     color: #fff;
     margin-top: 50px;
 }
-/* Adicionando regras de mídia para telas menores */
 @media screen and (max-width: 768px) {
     .menu {
-        height: auto; 
-        flex-direction: column; 
+        height: auto;
+        flex-direction: column;
         align-items: flex-start;
+        padding: 20px; /* Adicionei mais espaço interno para melhorar a aparência */
     }
 
     li {
@@ -234,6 +234,7 @@ footer {
     }
 
     .imagem {
+        width: 100%;
         height: auto;
     }
 
