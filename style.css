@@ -1,7 +1,7 @@
 body {
     display: flex;
-    height: 100px;
-    width: 100%; 
+    flex-direction: column; 
+    min-height: 100vh; 
     background-color: #ffffff;
     margin: 0;
 }
@@ -27,16 +27,16 @@ h2, h5 {
     color: #64946D;
 }
 
-.menu {    
+.menu {
     display: flex;
-    height: 100px;
+    height: 80px; 
     width: 100%;
     bottom: 0;
-    background-color: #64946d14;;
+    background-color: #64946d14;
     color: rgb(255, 255, 255);
-    justify-content: first baseline;
+    justify-content: space-between; 
     align-items: center;
-    margin: 0;
+    padding: 0 20px; 
 }
 
 .barraMenu {
@@ -50,11 +50,7 @@ h2, h5 {
 }
 
 li {
-    margin: 40px;
-    background-position: center;
-    list-style: none;
-    padding: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
     font-size: 18px;
 
     a {
@@ -71,10 +67,8 @@ ul {
 }
 
 .imagem {
-    height: 500px;
-    width: 100%;
-    object-fit: contain;
-    margin: 0px;
+    height: auto; 
+    max-width: 100%; 
 }
 
 img:hover {
@@ -87,12 +81,12 @@ img:hover {
 }
 
 .conteudo {
-    margin: 45px;
+    margin: 15px;
+    font-size: 18px;
     background-position: center;
     list-style: none;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
     text-align: justify;
 }
 
@@ -231,29 +225,24 @@ footer {
     color: #fff;
     margin-top: 50px;
 }
-
 /* Adicionando regras de mídia para telas menores */
 @media screen and (max-width: 768px) {
-    .textoInicio {
-        margin: 15px;
-        font-size: 16px;
-    }
-
     .menu {
-        height: 80px;
+        height: auto; 
+        flex-direction: column; 
+        align-items: flex-start;
     }
 
     li {
-        margin: 20px;
-        font-size: 16px;
+        margin: 10px 0;
     }
 
     .imagem {
-        height: 300px;
+        height: auto;
     }
 
     .conteudo {
-        margin: 15px;
+        margin: 10px;
         font-size: 16px;
     }
 
@@ -262,7 +251,7 @@ footer {
     }
 
     .opcoes button {
-        margin: 15px;
+        margin: 10px;
         padding: 10px;
     }
 
