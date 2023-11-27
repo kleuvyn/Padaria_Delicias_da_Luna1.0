@@ -1,4 +1,5 @@
 body {
+    display: flex;
     height: 100px;
     width: 100%; 
     background-color: #ffffff;
@@ -9,7 +10,7 @@ main {
     margin-bottom: 70px;
 }
 
-.textoInicio{
+.textoInicio {
     margin: 45px;
     background-position: center;
     list-style: none;
@@ -18,51 +19,50 @@ main {
     font-size: 18px;
 }
 
-h1, h4{
-    color: #0F3D19 ;
+h1, h4 {
+    color: #0F3D19;
 }
 
-h2, h5{
-    color:#64946D;
-   
-   }
+h2, h5 {
+    color: #64946D;
+}
 
-.menu{    
+.menu {    
     display: flex;
-    height:100px;
+    height: 100px;
     width: 100%;
     bottom: 0;
-    background-color:#64946d14;;
+    background-color: #64946d14;;
     color: rgb(255, 255, 255);
-    justify-content:first baseline;
-    align-items:center;
+    justify-content: first baseline;
+    align-items: center;
     margin: 0;
 }
 
-.barraMenu{
+.barraMenu {
     display: flex;
-    height:100px;
+    height: 100px;
     width: 100%;
     text-align: center;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     padding: 0px;
-    
 }
-li{
+
+li {
     margin: 40px;
     background-position: center;
     list-style: none;
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-   
+
     a {
-        color:#64946D;
-        
+        color: #64946D;
     }
 }
-ul{
+
+ul {
     background-position: center;
     list-style: none;
     padding: 0px;
@@ -70,24 +70,23 @@ ul{
     font-size: 18px;  
 }
 
-.imagem{
-
+.imagem {
     height: 500px;
     width: 100%;
-    object-fit:contain;
+    object-fit: contain;
     margin: 0px;
-
 }
+
 img:hover {
     transition: transform .3s;
 }
 
-.subtitulo{
+.subtitulo {
     height: 100px;
     width: 100%;
 }
 
-.conteudo{
+.conteudo {
     margin: 45px;
     background-position: center;
     list-style: none;
@@ -97,25 +96,21 @@ img:hover {
     text-align: justify;
 }
 
-
-.cardapio{
+.cardapio {
     width: 100%;
-    text-align:center;
+    text-align: center;
 }
 
-
- /* modal */
+/* modal */
 
 .modalBtn {
     height: 5vh;
     min-height: 30px;
     width: 15vh;
     min-width: 130px;
-
     border-radius: 5px;
     border: 0;
     outline: 0;
-
     background-color: #007119;
     font-size: 20px;
 }
@@ -123,7 +118,6 @@ img:hover {
 .text {
     margin-top: 0;
     font-size: 40px;
-   
 }
 
 .modal {
@@ -136,7 +130,6 @@ img:hover {
     height: 100%;
     overflow: auto;
     background-color: #64946dee;
- 
 }
 
 .modal .content {
@@ -146,14 +139,11 @@ img:hover {
     border-radius: 30px;
     width: 50%; 
     font-size: 22px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     font-family: 'LexendDeca-Regular';
     color: var(--title);
-    
 }
 
 .title {
@@ -168,10 +158,9 @@ img:hover {
     align-items: center;
 }
 
-
-.tiluloPedido{
+.tiluloPedido {
     width: 100%;
-    text-align:center;
+    text-align: center;
     font-size: 30px;
     color: #64946dee; 
 }
@@ -212,7 +201,6 @@ img:hover {
     border: none;
     border-radius: 5px;
     color: #64946dee;
-
 }
 
 button#confirmar-pedido {
@@ -224,16 +212,14 @@ button#confirmar-pedido {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-  
 }
 
 button#confirmar-pedido:hover {
     background-color: #27ae60;
- 
 }
 
-footer{
-    height:50px;
+footer {
+    height: 50px;
     width: 100%;
     text-align: center;
     background-color: #0F3D19 ;
@@ -242,6 +228,51 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-	color: #fff;
-	margin-top: 50px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Adicionando regras de mídia para telas menores */
+@media screen and (max-width: 768px) {
+    .textoInicio {
+        margin: 15px;
+        font-size: 16px;
+    }
+
+    .menu {
+        height: 80px;
+    }
+
+    li {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .imagem {
+        height: 300px;
+    }
+
+    .conteudo {
+        margin: 15px;
+        font-size: 16px;
+    }
+
+    .modal .content {
+        width: 80%;
+    }
+
+    .opcoes button {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #informacoes,
+    #total {
+        font-size: 14px;
+    }
+
+    button#confirmar-pedido {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
 }
