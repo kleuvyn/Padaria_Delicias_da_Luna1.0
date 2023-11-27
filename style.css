@@ -83,11 +83,7 @@ img:hover {
 .conteudo {
     margin: 15px;
     font-size: 18px;
-    background-position: center;
-    list-style: none;
-    padding: 0px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+  
 }
 
 .cardapio {
