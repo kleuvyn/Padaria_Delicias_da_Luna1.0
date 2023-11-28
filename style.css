@@ -363,7 +363,7 @@ footer{
     width: 100%;
     text-align: center;
     background-color: #0F3D19 ;
-    position:relative;
+    position:fixed;
     bottom: 0;
     display: flex;
     justify-content: center;
