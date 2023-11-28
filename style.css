@@ -1,5 +1,4 @@
 body {
-    
     height: 100px;
     width: 100%; 
     background-color: #ffffff;
@@ -9,6 +8,87 @@ body {
 main {
     margin-bottom: 70px;
 }
+
+
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.cadastro-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.cadastro-form input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cadastro-form button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cadastro-form button:hover {
+    background-color: #45a049;
+}
+
 
 .textoInicio{
     margin: 45px;
@@ -28,28 +108,59 @@ h2, h5{
    
    }
 
-.menu{    
-    display: flex;
-    height:100px;
-    width: 100%;
-    bottom: 0;
-    background-color:#64946d14;;
-    color: rgb(255, 255, 255);
-    justify-content:first baseline;
-    align-items:center;
-    margin: 0;
+header {
+    background-color: #64946d19;
+    box-shadow: 0px 3px 10px #64946D;
 }
 
-.barraMenu{
+.nav-bar {
     display: flex;
-    height:100px;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items:center;
-    padding: 0px;
-    
+    justify-content: space-between;
+   
 }
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #007119;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #64946D;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
 li{
     margin: 40px;
     background-position: center;
@@ -60,6 +171,7 @@ li{
    
     a {
         color:#64946D;
+        text-decoration: none;
         
     }
 }
@@ -134,7 +246,6 @@ img:hover {
     left: 0;
     top: 0;
     width: 100%; 
-    height: 100%;
     overflow: auto;
     background-color: #64946dee;
  
@@ -146,7 +257,7 @@ img:hover {
     padding: 20px;
     border-radius: 30px;
     width: 50%; 
-    font-size: 22px;
+    font-size: 20px;
 
     display: flex;
     flex-direction: column;
@@ -245,4 +356,59 @@ footer{
     align-items: center;
 	color: #fff;
 	margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        justify-content: start;
+    }
+    .icon{
+        width: 25px
+    }
+    .titulo-menu-mobile{
+        font-size: 18px;
+        font-family: 'Baskerville', 'serif';
+        color: #007119;
+    }
+    .botao-menu-mobile {
+        display: flex;
+        align-items: center;
+    }
+    .nav-item {
+        display: none;.
+        margin: 0 15px;
+    }
+
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
 }
