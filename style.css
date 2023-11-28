@@ -376,7 +376,7 @@ footer{
     .nav-bar {
         padding: 1.5rem 4rem;
         justify-content: start;
-        margin: 20px;
+
     }
     .icon{
         width: 25px
@@ -427,20 +427,5 @@ footer{
     }
     .open {
         display: block;
-    }
-    #pedidos{
-        margin: 20px;
-    }
-    #cardapio{
-        margin: 20px;
-    }
-    #categoria{
-        margin: 20px;
-    }
-    #imformacoes{
-        margin: 20px;
-    }
-    .conteudo{
-        margin: 20px;
     }
 }
