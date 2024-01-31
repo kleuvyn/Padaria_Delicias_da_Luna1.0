@@ -211,10 +211,10 @@ img:hover {
 }
 
 .conteudo{
-    margin: 50px;
+    margin: 30px;
     background-position: center;
     list-style: none;
-    padding: 0px;
+    padding: 0 70px 70px 70px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     text-align: justify;
